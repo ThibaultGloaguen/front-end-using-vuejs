@@ -1,0 +1,89 @@
+{ "treeData": [{
+    "name " : "Famille 1",
+    "children" :[
+      {
+        "name": "fct1",
+        "children": [
+          {
+            "name": "PARAM1",
+            "value": 3
+          },
+          {
+            "name": "PARAM2",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "name": "fct2",
+        "children": [
+          {
+            "name": "PARAM6",
+            "value": 3
+          },
+          {
+            "name": "PARAM3",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "name": "fct3",
+        "children": [
+          {
+            "name": "PARAM3",
+            "value": 5
+          },
+          {
+            "name": "PARAM8",
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+{
+  "name " : "Famille 2",
+  "children" :[
+    {
+      "name": "fct1",
+      "children": [
+        {
+          "name": "PARAM1",
+          "value": 3
+        },
+        {
+          "name": "PARAM2",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "fct2",
+      "children": [
+        {
+          "name": "PARAM6",
+          "value": 3
+        },
+        {
+          "name": "PARAM3",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "fct3",
+      "children": [
+        {
+          "name": "PARAM3",
+          "value": 5
+        },
+        {
+          "name": "PARAM8",
+          "value": 8
+        }
+      ]
+    }
+  ]
+}]
+}
