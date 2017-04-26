@@ -1,7 +1,7 @@
 <template>
   <div class="row tree">
     <div class="col-md-12 folder">
-        <div class="col-md-5 famille"
+        <div class="col-md-6 famille"
              v-if="parentIndex == null"
              :class="{bold: isFolder}"
              @click="toggle">
@@ -9,7 +9,7 @@
           {{indexFct}}
         <span v-if="isFolder">[{{open ? '-' : '+'}}]</span>
         </div>
-        <div class="col-md-5 function"
+        <div class="col-md-10 function"
            v-else-if="isFolder"
            @click="toggle">
         {{model.name}}
@@ -98,7 +98,7 @@
   .tree {
     font-family: Menlo, Consolas, monospace;
     color: #444;
-    padding-left: 15%;
+    padding-left: 10%;
   }
   .tree-view {
     cursor: pointer;
@@ -124,7 +124,7 @@
   }
   .param {
     padding : 2%;
-    width : 50%;
+    padding-left: 0%;
     text-align : center;
     margin : 1%;
     border-radius: 5%;

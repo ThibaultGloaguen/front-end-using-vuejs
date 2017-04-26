@@ -67,12 +67,13 @@
 
         axios.get('./static/cgi/' + this.buttonTab[value].get)
           .then((response) => {
-            this.journal = response.data;
+            this.journal = response.data.Journal;
           })
       }
     },
     mounted: function () {
-      axios.get('./static/cgi/format_json_journal.json')
+      this.buttonTab[0].myColor = '#96c3f1'
+      axios.get('./static/cgi/format_json_cde.json')
         .then((response) => {
           this.journal = response.data.Journal;
         })

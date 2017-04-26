@@ -1,11 +1,11 @@
 <template>
   <div class="perturbo">
     <div class="col-md-3 btnMenu">
-      <button type="button"
+      <button v-for="item,index in perturboButtonData.button_list" type="button"
               v-bind:style="'background:white'"
               class="btn-lg btn-block myBtnClass"
-              @click="activeButton()">
-        Perturbo
+              @click="activeButton(index)">
+        {{item.label}}
       </button>
     </div>
     <div class="col-md-9">
@@ -15,6 +15,7 @@
           :key="ana.id"
           :data="ana"
           :index="index"
+          type="number"
           :timeSpec="perturboData.liste_dates">
         </graphe>
       </div>
@@ -24,7 +25,9 @@
           :key="dig.id"
           :index="index"
           :data="dig"
-          :timeSpec="perturboData.liste_dates"> {{perturboData.DIG}}
+          type="number"
+          isDigit="YES"
+          :timeSpec="perturboData.liste_dates">
         </graphe>
       </div>
     </div>
@@ -44,22 +47,26 @@
     data: function () {
       return {
         isActivated: false,
-        perturboData: {}
+        perturboData: {},
+        perturboButtonData: {}
       }
     },
     methods: {
-      activeButton : function () {
-        axios.get('./static/cgi/format_json_perturbo.json')
+      activeButton : function (index) {
+          console.log(this.perturboButtonData)
+        axios.get('./static/cgi/' + this.perturboButtonData.button_list[index].link)
           .then((response) => {
             this.perturboData = response.data;
-            console.log(this.perturboData)
             this.isActivated = true
 
           })
       }
     },
     mounted : function () {
-
+      axios.get('./static/cgi/format_json_perturbo.json')
+        .then((response) => {
+          this.perturboButtonData = response.data;
+        })
     }
   }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="parameter">
-    <div class="col-md-6">
+    <div class="col-md-6 myTreeClass">
         <tree-view
           class="tree-view"
           :model="famille" :familyIndex="index" :indexFct="index" v-for="(famille,index) in paramTable" :key="famille.id">
@@ -56,5 +56,8 @@
   .parameter{
     background: #4cae4c;
   }
-
+  .myTreeClass{
+    overflow-y: scroll;
+    height: 700px;
+  }
 </style>
