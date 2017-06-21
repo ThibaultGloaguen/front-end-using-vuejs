@@ -1,3 +1,159 @@
-{"VERS":[{"typeeq":"14","occeq":"1","typeogis":"LOGICIEL","idogis":"418","occcompo":"0","idogis_court":"LOGICIEL IHM CDL MOD","idogis_long":"LOGICIEL IHM CDL MOD","ver":"4111","revision":"212021"}
-,{"typeeq":"14","occeq":"1","typeogis":"LOGICIEL","idogis":"1364","occcompo":"0","idogis_court":"LOGICIEL ARM UCC","idogis_long":"LOGICIEL ARM UCC","ver":"4111","revision":"0"}
+
+{"VERS":[
+  {
+    "rackID":"TG",
+    "cartes":[
+      {
+        "typeeq": "14",
+        "occeq": "1",
+        "typecarte": "i32",
+        "treeData": [
+          {
+            "type": "Logiciels",
+            "children": [
+              {
+                "label": "logiciel1",
+                "version": "123456789",
+                "revision": "1.2"
+              },
+              {
+                "label": "logiciel2",
+                "version": "789456123",
+                "revision": "4.5"
+              }
+            ]
+          },
+          {
+            "type": "Materiels",
+            "children": [
+              {
+                "label": "materiel1",
+                "version": "azerty",
+                "numserie": "1212121212"
+              },
+              {
+                "label": "materiel2",
+                "version": "qsdfghj",
+                "numserie": "454545454545"
+              }
+            ]
+          }
+        ]
+      },{
+        "typeeq": "14",
+        "occeq": "1",
+        "typecarte": "ucc",
+        "treeData": [
+          {
+            "type": "Logiciels",
+            "children": [
+              {
+                "label": "super logiciel1",
+                "version": "741852963",
+                "revision": "0.0"
+              },
+              {
+                "label": "super logiciel2",
+                "version": "147258369",
+                "revision": "1.0"
+              }
+            ]
+          },
+          {
+            "type": "Materiels",
+            "children": [
+              {
+                "label": "supermateriel1",
+                "version": "XXXXXXXXX",
+                "numserie": "787878787878"
+              },
+              {
+                "label": "supermateriel2",
+                "version": "YYYYYYYYYY",
+                "numserie": "8989898989"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rackID":"BANA",
+    "cartes":[
+      {
+        "typeeq": "14",
+        "occeq": "1",
+        "typecarte": "ucc",
+        "treeData": [
+          {
+            "type": "Logiciels",
+            "children": [
+              {
+                "label": "logiciel1",
+                "version": "111111111111",
+                "revision": "111111111111"
+              },
+              {
+                "label": "logiciel2",
+                "version": "2222222222",
+                "revision": "2222222222"
+              }
+            ]
+          },
+          {
+            "type": "Materiels",
+            "children": [
+              {
+                "label": "materiel1",
+                "version": "3333333333",
+                "numserie": "3333333333"
+              },
+              {
+                "label": "materiel2",
+                "version": "444444444444",
+                "numserie": "444444444444"
+              }
+            ]
+          }
+        ]
+      },{
+        "typeeq": "14",
+        "occeq": "1",
+        "typecarte": "i32",
+        "treeData": [
+          {
+            "type": "Logiciels",
+            "children": [
+              {
+                "label": "logiciel1",
+                "version": "XXXXXXXXX",
+                "revision": "0.0"
+              },
+              {
+                "label": "logiciel2",
+                "version": "XXXXXXXXX",
+                "revision": "0.0"
+              }
+            ]
+          },
+          {
+            "type": "Materiels",
+            "children": [
+              {
+                "label": "materiel1",
+                "version": "XXXXXXXXX",
+                "numserie": "0.0"
+              },
+              {
+                "label": "materiel2",
+                "version": "XXXXXXXXX",
+                "numserie": "0.0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ]}

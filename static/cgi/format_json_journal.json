@@ -1,8 +1,12 @@
-{"Journal":
-  [
-    {"date":"04/04/2017 13:36:13","milli":"68","lib_cour_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
-    {"date":"04/04/2017 13:36:13","milli":"68","lib_cour_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
-    {"date":"04/04/2017 13:36:13","milli":"68","lib_cour_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
-    {"date":"04/04/2017 13:36:13","milli":"68","lib_cour_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
-    {"date":"04/04/2017 13:36:13","milli":"68","lib_cour_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"}
-]}
+{
+"format":"journal",
+"version":"1",
+"journal":
+[
+  {"date":"2017-04-01 13:36:13,048","synchro":"0","lib_court_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
+  {"date":"2017-04-01 13:36:13,048","synchro":"1","lib_court_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
+  {"date":"2017-04-01 13:36:13,048","synchro":"0","lib_court_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
+  {"date":"2017-04-01 13:36:13,048","synchro":"0","lib_court_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"},
+  {"date":"2017-04-01 13:36:13,048","synchro":"0","lib_court_tranche":"TR.L1","lib_long_info":"POS.DJ","complementaire":"OUV"}
+]
+}

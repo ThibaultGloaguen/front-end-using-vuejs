@@ -8,6 +8,7 @@ export const state = {
   currentParam :  {
     name: '',
     value: 0,
+    indice : 0,
     indexParam:0,
     indexFunction:0,
     indexFamily:0
@@ -19,6 +20,7 @@ export const mutations = {
   CHANGE_CURRENT(state, payload) {
     state.currentParam.name = payload.name
     state.currentParam.value = payload.value
+    state.currentParam.indice = payload.indice
     state.currentParam.indexParam = payload.indexParam
     state.currentParam.indexFunction = payload.indexFunction
     state.currentParam.indexFamily = payload.indexFamily
@@ -31,7 +33,6 @@ export const mutations = {
     state.paramTable[payload.indexFamily]
       .children[payload.indexFunction]
       .children[payload.indexParam].value = payload.value
-    console.log(state.paramTable)
   }
 }
 

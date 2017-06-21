@@ -82,6 +82,7 @@
           this.changeParam({
             name : this.model.name,
             value : this.model.value,
+            indice : this.model.indice,
             indexParam: this.indexFct,
             indexFunction: this.parentIndex,
             indexFamily: this.grandParentIndex
@@ -98,7 +99,7 @@
   .tree {
     font-family: Menlo, Consolas, monospace;
     color: #444;
-    padding-left: 10%;
+    padding-left: 5%;
   }
   .tree-view {
     cursor: pointer;

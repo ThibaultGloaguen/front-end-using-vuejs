@@ -12,7 +12,7 @@
         </div>
       </div>
       <transition name="slide-fade" mode="out-in">
-      <div class="row" v-if="buttonTab[indexCourant].label != 'systeme' ">
+      <div class="row" v-if="buttonTab[indexCourant].label != 'securite' ">
         <div class="panel-body">
           <div class="row">
           <div class="col-md-3">Date</div>
@@ -21,8 +21,8 @@
           <div class="col-md-3">Val</div>
           </div>
           <div class="row" v-for="item in journal">
-          <div class="col-md-3">{{item.date}},{{item.milli}}</div>
-          <div class="col-md-3">{{item.lib_cour_tranche}}</div>
+          <div class="col-md-3">{{item.date}}</div>
+          <div class="col-md-3">{{item.lib_court_tranche}}</div>
           <div class="col-md-3">{{item.lib_long_info}}</div>
           <div class="col-md-3">{{item.complementaire}}</div>
           </div>
@@ -30,7 +30,14 @@
       </div>
       <div class="row" v-else>
         <div class="panel-body">
-          salut
+          <div class="row">
+            <div class="col-md-3">Date</div>
+            <div class="col-md-9">Message</div>
+          </div>
+          <div class="row" v-for="item in journal">
+            <div class="col-md-3">{{item.date}}</div>
+            <div class="col-md-9">{{item.message}}</div>
+          </div>
         </div>
       </div>
       </transition>
@@ -49,10 +56,10 @@
           msg: "hello journal",
           journal: [],
           buttonTab: [
-            {get:'format_json_cde.json',label:'CDE',myColor:'white'},
-            {get:'format_json_maintenance.json',label:'maintenance',myColor:'white'},
-            {get:'format_json_systeme.json',label:'systeme',myColor:'white'},
-            {get:'format_json_securite.json',label:'securite',myColor:'white'},
+            {get:'cde',label:'CDE',myColor:'#96c3f1'},
+            {get:'maint',label:'maintenance',myColor:'white'},
+            {get:'sys',label:'systeme',myColor:'white'},
+            {get:'secu',label:'securite',myColor:'white'},
           ],
         indexCourant : 0
       }
@@ -65,17 +72,17 @@
         }
         this.buttonTab[value].myColor = '#96c3f1'
 
-        axios.get('./static/cgi/' + this.buttonTab[value].get)
+        axios.get('cgi/' + this.buttonTab[value].get)
           .then((response) => {
-            this.journal = response.data.Journal;
+            this.journal = response.data.journal
+            console.log(response.data)
           })
       }
     },
     mounted: function () {
-      this.buttonTab[0].myColor = '#96c3f1'
-      axios.get('./static/cgi/format_json_cde.json')
+      axios.get('cgi/cde')
         .then((response) => {
-          this.journal = response.data.Journal;
+          this.journal = response.data.journal
         })
     },
   }

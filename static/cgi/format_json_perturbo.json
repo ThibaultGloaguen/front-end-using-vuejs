@@ -1,8 +1,8 @@
 {
   "button_list" : [
-    { "label" : "PERTURBO1", "link" : "format_json_p1.json"},
-    { "label" : "PERTURBO2", "link" : "format_json_p2.json"},
-    { "label" : "PERTURBO3", "link" : "format_json_p3.json"}
+    { "label" : "PERTURBO1", "link" : "format_json_p1.json", "pathToFile" : "./static/cgi/csv.tar"},
+    { "label" : "PERTURBO2", "link" : "format_json_p2.json", "pathToFile" : "./static/cgi/csv.tar"},
+    { "label" : "PERTURBO3", "link" : "format_json_p3.json", "pathToFile" : "./static/cgi/csv.tar"}
   ]
 }
 

@@ -1,0 +1,178 @@
+{{
+  "format":"versions",
+  "version":"1",
+  "versions":
+  [
+  {
+    "rackID":"TG",
+    "cartes":[
+      {
+        "typecarte": "I32",
+        "occcarte": "1",
+        "logiciels": [
+              {
+                "label": "LOGICIEL I32",
+                "idogis":"1338",
+                "version": "1.0b",
+                "revision": "112542"
+              },
+              {
+                "label": "LOGICIEL TOTO",
+                "idogis":"1254",
+                "version": "2.5c",
+                "revision": "125268"
+              }
+        ]
+        ,
+        "materiels": [
+              {
+                "label": "CARTE I32",
+                "idogis":"1248",
+                "version": "5.2b",
+                "numserie": "12.12.001"
+              },
+              {
+                "label": "MEZZANINE TOTO",
+                "idogis":"1255",
+                "version": "1.0b",
+                "numserie": "12.12.001.d"
+              }
+        ]
+     }
+     ,
+     {
+        "typecarte": "UCC",
+        "occcarte": "1",
+        "logiciels": [
+              {
+                "label": "LOGICIEL FPGA UCC",
+                "idogis":"1362",
+                "version": "2.3c",
+                "revision": "12563"
+              },
+              {
+                "label": "super logiciel2",
+                "idogis":"1245",
+                "version": "3.2a",
+                "revision": "100152"
+              },
+              {
+                "label": "super logiciel2",
+                "idogis":"1245",
+                "version": "3.2a",
+                "revision": "100152"
+              }
+        ],
+        "materiels": [
+              {
+                "label": "supermateriel1",
+                "idogis":"1245",
+                "version": "2.0v",
+                "numserie": "25.52.002.c"
+              },
+              {
+                "label": "supermateriel2",
+                "idogis":"1245",
+                "version": "2.0v",
+                "numserie": "25.52.002.d"
+              }
+        ]
+      }
+    ]
+  }
+]}
+  "format":"stat_maintenance",
+  "version":"1",
+  "stats" : [
+    { "composant":"Taux d'utilisation CPU",
+      "stat": {
+        "actuel":"12.01",
+        "moy5min":"0.1",
+        "moy1h":"0.4",
+        "moy1j":"0.01",
+        "moy7j":"0.5",
+        "moy31j":"0.4"
+      }
+    },      
+    { "composant":"Temperature CPU",
+      "stat": {
+        "actuel":"67.4",
+        "moy5min":"67.2",
+        "moy1h":"50",
+        "moy1j":"55.1",
+        "moy7j":"56.8",
+        "moy31j":"40.4"
+      }
+    },      
+    { "composant":"Taux de RAM disponible",
+      "stat": {
+        "actuel":"84.4",
+        "moy5min":"84.4",
+        "moy1h":"84.4",
+        "moy1j":"84.4",
+        "moy7j":"84.4",
+        "moy31j":"84.4"
+      }
+    },      
+    { "composant":"Taux espace disponible LOGS",
+      "stat": {
+        "actuel":"12.01",
+        "moy5min":"0.1",
+        "moy1h":"0.4",
+        "moy1j":"0.01",
+        "moy7j":"0.5",
+        "moy31j":"0.4"
+      }
+    },      
+    { "composant":"Taux espace disponible ARCH",
+      "stat": {
+        "actuel":"12.01",
+        "moy5min":"0,1",
+        "moy1h":"0,4",
+        "moy1j":"0,01",
+        "moy7j":"0,5",
+        "moy31j":"0,4"
+      }
+    },      
+    { "composant":"Taux espace disponible CONF",
+      "stat": {
+        "actuel":"12.01",
+        "moy5min":"0.1",
+        "moy1h":"0.4",
+        "moy1j":"0.01",
+        "moy7j":"0.5",
+        "moy31j":"0.4"
+      }
+    },      
+    { "composant":"Taux utilisation CAN",
+      "stat": {
+        "actuel":"98",
+        "moy5min":"0.1",
+        "moy1h":"0.4",
+        "moy1j":"0.01",
+        "moy7j":"0.5",
+        "moy31j":"0.4"
+      }
+    },      
+    { "composant":"Taux utilisation IF_POSTE",
+      "stat": {
+        "actuel":"12.01",
+        "moy5min":"0.1",
+        "moy1h":"0.4",
+        "moy1j":"0.01",
+        "moy7j":"0.5",
+        "moy31j":"0.4"
+      }
+    },      
+    { "composant":"Taux utilisation IF_LOCAL",
+      "stat": {
+        "actuel":"12.01",
+        "moy5min":"0.1",
+        "moy1h":"0.4",
+        "moy1j":"0.01",
+        "moy7j":"0.5",
+        "moy31j":"0.4"
+      }
+    }
+  ]
+}

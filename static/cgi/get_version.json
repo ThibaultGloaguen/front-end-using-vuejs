@@ -1,156 +1,81 @@
-{"VERS":[
+{
+  "format":"versions",
+  "version":"1",
+  "versions":
+  [
   {
     "rackID":"TG",
     "cartes":[
       {
-        "typeeq": "14",
-        "occeq": "1",
-        "typecarte": "i32",
-        "treeData": [
-          {
-            "type": "Logiciels",
-            "children": [
+        "typecarte": "I32",
+        "occcarte": "1",
+        "logiciels": [
               {
-                "label": "logiciel1",
-                "version": "123456789",
-                "revision": "1.2"
+                "label": "LOGICIEL I32",
+                "idogis":"1338",
+                "version": "1.0b",
+                "revision": "112542"
               },
               {
-                "label": "logiciel2",
-                "version": "789456123",
-                "revision": "4.5"
+                "label": "LOGICIEL TOTO",
+                "idogis":"1254",
+                "version": "2.5c",
+                "revision": "125268"
               }
-            ]
-          },
-          {
-            "type": "Materiels",
-            "children": [
-              {
-                "label": "materiel1",
-                "version": "azerty",
-                "numserie": "1212121212"
-              },
-              {
-                "label": "materiel2",
-                "version": "qsdfghj",
-                "numserie": "454545454545"
-              }
-            ]
-          }
         ]
-      },{
-        "typeeq": "14",
-        "occeq": "1",
-        "typecarte": "ucc",
-        "treeData": [
-          {
-            "type": "Logiciels",
-            "children": [
+        ,
+        "materiels": [
               {
-                "label": "super logiciel1",
-                "version": "741852963",
-                "revision": "0.0"
+                "label": "CARTE I32",
+                "idogis":"1248",
+                "version": "5.2b",
+                "numserie": "12.12.001"
+              },
+              {
+                "label": "MEZZANINE TOTO",
+                "idogis":"1255",
+                "version": "1.0b",
+                "numserie": "12.12.001.d"
+              }
+        ]
+     }
+     ,
+     {
+        "typecarte": "UCC",
+        "occcarte": "1",
+        "logiciels": [
+              {
+                "label": "LOGICIEL FPGA UCC",
+                "idogis":"1362",
+                "version": "2.3c",
+                "revision": "12563"
               },
               {
                 "label": "super logiciel2",
-                "version": "147258369",
-                "revision": "1.0"
+                "idogis":"1245",
+                "version": "3.2a",
+                "revision": "100152"
+              },
+              {
+                "label": "super logiciel2",
+                "idogis":"1245",
+                "version": "3.2a",
+                "revision": "100152"
               }
-            ]
-          },
-          {
-            "type": "Materiels",
-            "children": [
+        ],
+        "materiels": [
               {
                 "label": "supermateriel1",
-                "version": "XXXXXXXXX",
-                "numserie": "787878787878"
+                "idogis":"1245",
+                "version": "2.0v",
+                "numserie": "25.52.002.c"
               },
               {
                 "label": "supermateriel2",
-                "version": "YYYYYYYYYY",
-                "numserie": "8989898989"
+                "idogis":"1245",
+                "version": "2.0v",
+                "numserie": "25.52.002.d"
               }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "rackID":"BANA",
-    "cartes":[
-      {
-        "typeeq": "14",
-        "occeq": "1",
-        "typecarte": "ucc",
-        "treeData": [
-          {
-            "type": "Logiciels",
-            "children": [
-              {
-                "label": "logiciel1",
-                "version": "111111111111",
-                "revision": "111111111111"
-              },
-              {
-                "label": "logiciel2",
-                "version": "2222222222",
-                "revision": "2222222222"
-              }
-            ]
-          },
-          {
-            "type": "Materiels",
-            "children": [
-              {
-                "label": "materiel1",
-                "version": "3333333333",
-                "numserie": "3333333333"
-              },
-              {
-                "label": "materiel2",
-                "version": "444444444444",
-                "numserie": "444444444444"
-              }
-            ]
-          }
-        ]
-      },{
-        "typeeq": "14",
-        "occeq": "1",
-        "typecarte": "i32",
-        "treeData": [
-          {
-            "type": "Logiciels",
-            "children": [
-              {
-                "label": "logiciel1",
-                "version": "XXXXXXXXX",
-                "revision": "0.0"
-              },
-              {
-                "label": "logiciel2",
-                "version": "XXXXXXXXX",
-                "revision": "0.0"
-              }
-            ]
-          },
-          {
-            "type": "Materiels",
-            "children": [
-              {
-                "label": "materiel1",
-                "version": "XXXXXXXXX",
-                "numserie": "0.0"
-              },
-              {
-                "label": "materiel2",
-                "version": "XXXXXXXXX",
-                "numserie": "0.0"
-              }
-            ]
-          }
         ]
       }
     ]

@@ -24,6 +24,7 @@
           {link:'/parameters',label:'PARAMETRES',myColor:'white'},
           {link:'/journal',label:'JOURNAL',myColor:'white'},
           {link:'/version',label:'VERSION',myColor:'white'},
+          {link:'/maintenance',label:'MAINTENANCE',myColor:'white'},
           {link:'/download',label:'TELECHARGEMENT',myColor:'white'},
           {link:'/perturbo',label:'PERTURBOGRAPHIE',myColor:'white'},
           {link:'/reboot',label:'REBOOT',myColor:'white'}]
@@ -61,6 +62,7 @@
   .myBtnClass{
     color: black;
     border : solid 1px #ffffff;
+    font-family: "Times New Roman", Times, serif;
   }
   .myBtnClass:hover{
     color: black;

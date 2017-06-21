@@ -1,6 +1,6 @@
 <template>
   <div class="col-md-2">
-    <button class="carte" @click="printInfoCard">{{type}}</button>
+    <button v-bind:style="'background:' + activeColor" class="carte" @click="printInfoCard">{{type}}</button>
   </div>
 </template>
 
@@ -38,8 +38,5 @@
   }
   .carte:hover{
     background: lightgrey;
-  }
-  .carte:focus{
-    background: darkgrey;
   }
 </style>

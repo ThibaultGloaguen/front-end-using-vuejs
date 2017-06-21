@@ -8,7 +8,7 @@
       <div class="panel-body">
         <div class="row">Valeur: <span>{{currentParam.value}}</span></div>
         <input type="text" v-model="currentParam.value" placeholder="Nouvelle valeur">
-        <button class="btn btn-primary" @click="changeParam(currentParam),updateTable(currentParam)">Modifier</button>
+        <button class="btn btn-primary" @click="changeParam(currentParam),updateTable(currentParam),postData(currentParam)">Modifier</button>
     </div>
     </div>
   </div>
@@ -19,6 +19,7 @@
 <script>
   import store from './store/store.js'
   import Vuex from 'vuex'
+  import axios from 'axios'
   export default {
     store: store,
     name: 'FormInput',
@@ -36,12 +37,12 @@
         'changeParam',
         'updateTable'
       ]),
+      postData : function (currentParam) {
+        axios.get('cgi/params/' + currentParam.indice + '/' + currentParam.value) 
+        .then(function (response) {
+          console.log(response);
+        })
+      }
     }
   }
 </script>
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>

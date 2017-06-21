@@ -5,7 +5,7 @@ var MockAdapter = require('axios-mock-adapter');
 
 
 let buttonTabTest = [
-  {get:'format_json_cde.json',label:'CDE',myColor:'white'},
+  {get:'format_json_cde.json',label:'CDE',myColor:'#96c3f1'},
   {get:'format_json_maintenance.json',label:'maintenance',myColor:'white'},
   {get:'format_json_systeme.json',label:'systeme',myColor:'white'},
   {get:'format_json_securite.json',label:'securite',myColor:'white'},
@@ -43,8 +43,8 @@ describe('Journal.vue', () => {
     expect(vm.journal).to.be.a('array')
     expect(vm.buttonTab).to.be.a('array')
     expect(vm.indexCourant).to.be.a('number')
-
     expect(vm.msg).to.equal('hello journal')
+
     for (let i = 0 ; i < buttonTabTest.length ; i ++) {
       expect(vm.buttonTab[i].get).to.equal(buttonTabTest[i].get)
       expect(vm.buttonTab[i].label).to.equal(buttonTabTest[i].label)

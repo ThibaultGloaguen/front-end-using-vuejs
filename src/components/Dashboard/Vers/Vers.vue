@@ -18,13 +18,13 @@
       }
     },
     mounted: function () {
-      axios.get('./static/cgi/get_version.json')
+      axios.get('cgi/versions')
         .then((response) => {
-          this.version = response.data.VERS
+          this.version = response.data.versions
+          console.log(this.version)
         })
     },
     methods: {
-
     },
     components: {
         'rack':Rack,

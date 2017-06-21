@@ -3,24 +3,24 @@
     <div class="col-md-12 status ">
       <div class="row">
            <div class="col-md-3">
-             <p>Type : {{table.type_ied}}</p>
+             <p>name : {{table.ied_state.ied_name}}</p>
            </div>
            <div class="col-md-3">
-             <p>Timezone : {{table.timezone}}</p>
+             <p>Timezone : {{table.ied_state.timezone}}</p>
            </div>
            <div class="col-md-3">
-             <p>Configuration : {{table.nom_conf}}</p>
+             <p>Configuration : {{table.ied_state.nom_conf}}</p>
            </div>
            <div class="col-md-3">
-             <p>Ocurrence : {{table.occurrence_ied}}</p>
+             <p>lib_long_tranche : {{table.ied_state.lib_long_tranche}}</p>
            </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <p>Version : {{table.version_conf}}</p>
+          <p>Version : {{table.ied_state.version_conf}}</p>
         </div>
         <div class="col-md-6">
-          <p>Date : {{table.dateheure}}</p>
+          <p>Date : {{table.ied_state.dateheure}}</p>
         </div>
       </div>
     </div>
@@ -35,17 +35,17 @@
     name: 'StatusBar',
     data () {
       return {
-        table: []
+        table: {},
+        errorFromServer : 0
       }
     },
     mounted: function () {
-      axios.get('./static/cgi/get_ied_state.json')
+      axios.get('cgi/ied_state')
         .then((response) => {
           this.table = response.data;
         }).then((error) => {
-
+          this.errorFromServer = error
       })
-
     },
   }
 </script>

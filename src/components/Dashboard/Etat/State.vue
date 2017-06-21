@@ -18,13 +18,18 @@
     data () {
       return {
         table : [],
+        errorFromServer : 0
       }
     },
     mounted: function () {
-        axios.get('./static/cgi/es_states.json')
+        axios.get('cgi/etat_es')
           .then((response) => {
             this.table = response.data.etat_es;
-         })
+            console.log(this.table)
+          }).then((error) => {
+          this.errorFromServer = error
+          console.log(this.errorFromServer)
+        })
 
     },
     components : {'board-state':BoardState},

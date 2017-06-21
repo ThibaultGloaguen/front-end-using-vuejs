@@ -19,19 +19,25 @@
 
 
 <script>
+  import axios from 'axios'
   export default {
     name: 'CDE',
     data () {
       return {
-        msg: 'Are you sure you want to reboot ?'
+        msg: 'Are you sure you want to reboot ?',
+        retCode : 0
       }
     },
     methods: {
         reboot : function () {
-          //post method to reboot
+          axios.get('cgi/reboot')
+            .then((response) => {
+              this.retCode = response
+            })
         },
         rootToLast : function () {
-
+          this.$router.push('/dashboard')
+          this.$router.go()
         }
     }
   }

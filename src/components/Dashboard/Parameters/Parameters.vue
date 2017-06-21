@@ -39,7 +39,7 @@
       }
     },
     mounted: function () {
-      axios.get('./static/cgi/format_params.json')
+      axios.get('cgi/params')
         .then((response) => {
           this.setParamTable(response.data.treeData)
         })

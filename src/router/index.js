@@ -15,7 +15,7 @@ export default new Router({
     {
       path: '/state',
       name: 'state',
-      component: require('../components/Dashboard/State.vue')
+      component: require('../components/Dashboard/Etat/State.vue')
     },
     {
       path: '/parameters',
@@ -48,6 +48,11 @@ export default new Router({
       path: '/reboot',
       name: 'reboot',
       component: require('../components/Dashboard/Reboot.vue')
+    },    
+    {
+      path: '/maintenance',
+      name: 'maintenance',
+      component: require('../components/Dashboard/maintenance/Maintenance.vue')
     },
   ]
 })

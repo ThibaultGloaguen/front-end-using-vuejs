@@ -17,7 +17,6 @@
     },
     methods : {
         activeButton : function (el) {
-            console.log('coucou')
             //this.$refs.myButton.style.background = "#d30d3a"
         }
     }

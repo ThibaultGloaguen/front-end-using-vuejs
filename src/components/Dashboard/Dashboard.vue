@@ -22,12 +22,10 @@
 <style scoped>
   h1, h2 {
     font-weight: normal;
-  }
-
-  a {
-    color: #42b983;
+    color : #312780;
+    font-family: "Times New Roman", Times, serif;
   }
   .dashboard{
-    background: #71cbff;
+    background: #d30d3a;
   }
 </style>
